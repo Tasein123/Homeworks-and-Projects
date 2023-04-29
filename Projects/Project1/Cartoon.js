@@ -1,6 +1,6 @@
 function draw() {
-    // Locate the element "mycanvas" in the document.
-    var canvas = document.getElementById("myCanvas");
+    // Locate the element "Canvas" in the document.
+    var canvas = document.getElementById("Canvas");
     var context = canvas.getContext("2d");
 
     //Wall Color
