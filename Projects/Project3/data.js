@@ -20,11 +20,7 @@ data = {
             "location": "STATEN ISLAND",
             "number": 19019
         },
-        /*
-        {
-            "location": "NOT INDICATED",
-            "number": 326
-        },*/
+
 
     ],
     "meta": {
