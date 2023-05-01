@@ -7,6 +7,26 @@ var data = data.boroughs.map(function (e) {
 });
 
 // chart1
+var ctx = document.getElementById('doughnut').getContext('2d');
+var myChart2 = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: labels,
+        datasets: [{
+            data: data,
+            backgroundColor: [
+                'rgba(204, 153, 255, 0.2)',
+                'rgba(153, 204, 255, 0.2)',
+                'rgba(0, 204, 153, 0.2)',
+                'rgba(255, 255, 204, 0.2)',
+                'rgba(1255, 102, 102, 0.2)',
+            ],
+        }],
+    },
+
+});
+
+// chart 2
 var ctx = document.getElementById('Horizontal-bar-chart').getContext('2d');
 var myChart1 = new Chart(ctx, {
     type: 'horizontalBar',
@@ -24,23 +44,5 @@ var myChart1 = new Chart(ctx, {
             ],
         }],
     },
-});
 
-// chart 2
-var ctx = document.getElementById('doughnut').getContext('2d');
-var myChart2 = new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-        labels: labels,
-        datasets: [{
-            data: data,
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-            ],
-        }],
-    },
 });
