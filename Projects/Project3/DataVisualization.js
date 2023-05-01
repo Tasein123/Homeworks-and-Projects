@@ -33,7 +33,7 @@ var myChart1 = new Chart(ctx, {
     data: {
         labels: labels,
         datasets: [{
-            label: '# of Complaints',
+            label: 'Number of Complaints',
             data: data,
             backgroundColor: [
                 'rgba(204, 153, 255, 0.2)',
