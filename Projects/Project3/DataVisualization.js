@@ -1,4 +1,4 @@
-// store data 
+// stored data 
 var labels = data.boroughs.map(function (e) {
     return e.location;
 });
