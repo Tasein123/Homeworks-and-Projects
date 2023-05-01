@@ -9,12 +9,12 @@ talkBubble.src = 'images/6cr6xGXzi.png';
 
 var tableImgObj = new Image();
 tableImgObj.src = 'images/table.jpg';
-/*
+
 var tvImgObj = new Image();
 tvImgObj.src = 'images/TV.png';
 
 var snowFlake = new Image();
-snowFlake.src = 'images/switch.jpg';*/
+snowFlake.src = 'images/switch.jpg';
 
 var canvas = document.getElementById('table');
 var ctx = canvas.getContext('2d');
