@@ -2,23 +2,24 @@ data = {
     "boroughs": [
         {
             "location": "BROOKLYN",
-            "number": 132445
+            "number": 36931
         },
         {
             "location": "MANHATTAN",
-            "number": 116352
-        },
-        {
-            "location": "BRONX",
-            "number": 100994
+            "number": 30164
         },
         {
             "location": "QUEENS",
-            "number": 92575
+            "number": 28878
+        },
+        {
+            
+            "location": "BRONX",
+            "number": 27837
         },
         {
             "location": "STATEN ISLAND",
-            "number": 19019
+            "number": 5726
         },
 
 
