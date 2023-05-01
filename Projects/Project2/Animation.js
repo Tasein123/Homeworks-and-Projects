@@ -7,9 +7,9 @@ img.src = 'images/8049563.jpg';
 var TalkBubble = new Image();
 talkBubble.src = 'images/6cr6xGXzi.png';
 
-/*var tableImgObj = new Image();
+var tableImgObj = new Image();
 tableImgObj.src = 'images/table.jpg';
-
+/*
 var tvImgObj = new Image();
 tvImgObj.src = 'images/TV.png';
 
@@ -81,19 +81,19 @@ function callBubble() {
 		ctx.fillText("  O M G ", (canvas.width - tvImgObj.width) * 1.36, canvas.height * 0.38);
 	}
 	else if (timer < 40) {
-		ctx.drawImage(tvBubble, -10, canvas.height * 0.5, tvBubble.width * 0.3 - 10, tvBubble.height * 0.3);
+		ctx.drawImage(talkBubble, -10, canvas.height * 0.5, talkBubble.width * 0.3 - 10, talkBubble.height * 0.3);
 		ctx.fillText("   . . . is you again?", canvas.width * 0.03, canvas.height * 0.72);
 	}
 	else if (timer < 80) {
-		ctx.drawImage(tvBubble, -10, canvas.height * 0.5, tvBubble.width * 0.3 - 10, tvBubble.height * 0.3);
+		ctx.drawImage(talkBubble, -10, canvas.height * 0.5, talkBubble.width * 0.3 - 10, talkBubble.height * 0.3);
 		solutionText();
 	}
 	else if (timer < 100) {
-		ctx.drawImage(tvBubble, (canvas.width - tvImgObj.width) * 1.3, canvas.height * 0.3, tvBubble.width * 0.15, tvBubble.height * 0.1);
+		ctx.drawImage(talkBubble, (canvas.width - tvImgObj.width) * 1.3, canvas.height * 0.3, talkBubble.width * 0.15, talkBubble.height * 0.1);
 		ctx.fillText(" Thank You! ", (canvas.width - tvImgObj.width) * 1.36, canvas.height * 0.38);
 	}
 	else if (timer < 120) {
-		ctx.drawImage(tvBubble, -10, canvas.height * 0.5, tvBubble.width * 0.3, tvBubble.height * 0.3);
+		ctx.drawImage(talkBubble, -10, canvas.height * 0.5, talkBubble.width * 0.3, talkBubble.height * 0.3);
 		ctx.fillText("      You Welcome! ", canvas.width * 0.03, canvas.height * 0.72);
 		if(timer > 110) {
 			ctx.drawImage(snowFlake, (canvas.width - tvImgObj.width) * 1.2, canvas.height * 0.3, snowFlake.width * 0.7, snowFlake.height * 0.7);
