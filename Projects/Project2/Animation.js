@@ -4,8 +4,8 @@
 var img = new Image();
 img.src = 'images/8049563.jpg';
 
-var tvBubble = new Image();
-tvBubble.src = 'images/6cr6xGXzi.png';
+var TalkBubble = new Image();
+talkBubble.src = 'images/6cr6xGXzi.png';
 
 /*var tableImgObj = new Image();
 tableImgObj.src = 'images/table.jpg';
