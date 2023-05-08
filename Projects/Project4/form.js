@@ -66,3 +66,5 @@ function setLocalStorage(){
     document.getElementById('email').innerHTML =          localStorage.getItem('emailEntry'); 
     document.getElementById('factBox').innerHTML = localStorage.getItem('factBoxEntry');
   }
+
+  //        <li> <a href="Projects/Project4/form.html"> Project#3 Interactive Display </a> </li> 
