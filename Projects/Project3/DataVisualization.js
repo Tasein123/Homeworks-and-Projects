@@ -27,9 +27,9 @@ var myChart2 = new Chart(ctx, {
 });
 
 // chart 2
-var ctx = document.getElementById('Horizontal-bar-chart').getContext('2d');
+var ctx = document.getElementById('Horizontall-bar-chart').getContext('2d');
 var myChart1 = new Chart(ctx, {
-    type: 'horizontalBar',
+    type: 'horizontalalBar',
     data: {
         labels: labels,
         datasets: [{
