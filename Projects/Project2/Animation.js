@@ -29,7 +29,7 @@ const scaledWidth = scale * width;
 const scaledHeight = scale * height;
 
 // variables for rolling image
-const cycleLoop = [0, 1, 2, 3];	// 4 in col and 2 in row for the spritesheet
+const cycleLoop = [0, 1, 2, 3];	
 var row = 0; 
 let currentLoopIndex = 0;
 let frameCount = 0;
@@ -37,7 +37,7 @@ let frameCount = 0;
 // timer
 var timer = -2;
 
-// drawing for window 
+// window 
 function drawFrame(frameX, frameY) {
 	ctx.drawImage(img,
 		frameX * width, frameY * height, width, height,
@@ -52,23 +52,22 @@ function step() {
 		return;
 	}
 
-	// draw wall
+	// wall
 	ctx.drawImage(tableImgObj, 0, 0, canvas.width, canvas.height);
 
-	// image rolling
 	rolling();
 
 	window.requestAnimationFrame(step);
 
-	// talk bubbles
+	// bubbles
 	callBubble();
 
-	// draw window
+	// window
 	ctx.drawImage(tvImgObj, (canvas.width - tvImgObj.width), canvas.height * 0, tvImgObj.width * 0.8, tvImgObj.height * 0.68,);
 
 }
 
-// show bubble based on the value of timer
+// show bubble based on the timer
 function callBubble() {
 	ctx.font = "22px Arial";
 

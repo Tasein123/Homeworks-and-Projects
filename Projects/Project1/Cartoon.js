@@ -1,13 +1,10 @@
 function draw() {
-    // Locate the element "Canvas" in the document.
     var canvas = document.getElementById("Canvas");
     var context = canvas.getContext("2d");
 
     //Wall Color
     context.fillStyle = "rgb(110, 204, 255)";
     context.fillRect(0, 0, canvas.width, canvas.height);
-
-    //Decorations on the wall
     context.fillStyle = "rgb(102, 204, 255)";
     wallPaper(context, canvas.width, canvas.height);
 
@@ -15,11 +12,7 @@ function draw() {
     //Sky
     context.fillStyle = "rgb(20, 2, 50)";
     context.fillRect(canvas.width * 0.16, canvas.height * 0.1, canvas.width * 0.68, canvas.height * 0.6);
-
-    //Draw clouds and birds in the sky
     drawCloudsAndBirds(context, canvas.width * 0.2, canvas.width * 0.5, canvas.height * 0.12, canvas.height * 0.55);
-
-    //Draw Moon
     context.fillStyle = "rgb(255, 255, 255, 0.2)";
     drawCircle(context, canvas.width * 0.6, canvas.height * 0.2, canvas.height * 0.1);
     context.fillStyle = "rgb(255, 255, 255)";

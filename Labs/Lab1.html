@@ -20,13 +20,11 @@
 		for (var i = 0; i < fruits.length; i++) {
 			ctx.fillText(fruits[i], x * (i + 1) - 50, y * 5);
 			ctx.beginPath();
-			//ctx.strokeStyle(color[i]);
 			ctx.moveTo(x * (i + 1) + 12 - 50, y * 5 - 20);
 			ctx.lineTo(x * (i + 1) + 12 - 50, y * 5 - fruitsNum[i] * 5 - 20);
 			ctx.fillText(fruitsNum[i], x * (i + 1) + 10 - 50, y * 5 - fruitsNum[i] * 5 - 20 - 5);
 			ctx.strokeStyle = color[i];
 			ctx.stroke();
-			//x = x + 100;
 		}
 
 	</script>
